@@ -5,23 +5,23 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import foto from "./images/foto.png"
-import foto1 from "./images/office1.png"
-import foto2 from "./images/office2.jpg"
-import foto3 from "./images/office3.jpg"
-import foto4 from "./images/office4.jpg"
-import foto5 from "./images/office5.jpg"
-import foto6 from "./images/office6.png"
-import foto7 from "./images/office7.png"
-import foto8 from "./images/office8.jpg"
-import foto9 from "./images/office9.jpg"
-import foto10 from "./images/office10.jpg"
-import foto11 from "./images/office11.jpg"
-import foto12 from "./images/office12.jpg"
-import foto13 from "./images/office13.jpg"
-import foto14 from "./images/office14.jpg"
-import foto15 from "./images/office15.jpg"
-import foto16 from "./images/office16.jpg"
+import foto from './images/foto.png'
+import foto1 from './images/office1.png'
+import foto2 from './images/office2.jpg'
+import foto3 from './images/office3.jpg'
+import foto4 from './images/office4.jpg'
+import foto5 from './images/office5.jpg'
+import foto6 from './images/office6.png'
+import foto7 from './images/office7.png'
+import foto8 from './images/office8.jpg'
+import foto9 from './images/office9.jpg'
+import foto10 from './images/office10.jpg'
+import foto11 from './images/office11.jpg'
+import foto12 from './images/office12.jpg'
+import foto13 from './images/office13.jpg'
+import foto14 from './images/office14.jpg'
+import foto15 from './images/office15.jpg'
+import foto16 from './images/office16.jpg'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -70,7 +70,7 @@ export default function Home() {
                     Micheal Scott
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."</b>
+                  <b>&quot;Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -92,7 +92,7 @@ export default function Home() {
                     Jim Halpert
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"So this is my life. Until I win the lottery. Or Pam finally writes that series of young adult books."</b>
+                  <b>&quot;So this is my life. Until I win the lottery. Or Pam finally writes that series of young adult books.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -113,7 +113,7 @@ export default function Home() {
                     Pam Beesley
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"When you’re a kid, you assume your parents are soulmates. My kids are going to be right about that."</b>
+                  <b>&quot;When you&apos;re a kid, you assume your parents are soulmates. My kids are going to be right about that.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -135,7 +135,7 @@ export default function Home() {
                     Dwight Schrute
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"Whenever I'm about to do something, I think, 'Would an idiot do that?' and if they would, I do not do that thing."</b>
+                  <b>&quot;Whenever I&apos;m about to do something, I think, &apos;Would an idiot do that?&apos; and if they would, I do not do that thing.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -157,7 +157,7 @@ export default function Home() {
                     Stanley Hudson
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"I would rather work for an upturned broom with a bucket for a head than work for somebody else in this office besides myself."</b>
+                  <b>&quot;I would rather work for an upturned broom with a bucket for a head than work for somebody else in this office besides myself.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -178,7 +178,7 @@ export default function Home() {
                     Angela Martin
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                    <b>"My sister and I used to be best friends, and we haven’t talked in over 16 years. Over some disagreement I don’t even remember."</b>
+                    <b>&quot;My sister and I used to be best friends, and we haven&apos;t talked in over 16 years. Over some disagreement I don&apos;t even remember.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -200,7 +200,7 @@ export default function Home() {
                     Kevin Malone
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>“The only problem is whenever I try to make a taco, I get too excited and I crush it.”</b>
+                  <b>&quot;The only problem is whenever I try to make a taco, I get too excited and I crush it.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -222,7 +222,7 @@ export default function Home() {
                     Meredith Palmer
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"Hey everybody, he's not in the men's room. Although the seat was warm, so we may have just missed him."</b>
+                  <b>&quot;Hey everybody, he&apos;s not in the men&apos;s room. Although the seat was warm, so we may have just missed him.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -244,7 +244,7 @@ export default function Home() {
                     Creed Bratton
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"Nobody steals from Creed Bratton and gets away with it. The last person to do this disappeared. His name? Creed Bratton."</b>
+                  <b>&quot;Nobody steals from Creed Bratton and gets away with it. The last person to do this disappeared. His name? Creed Bratton.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -266,7 +266,7 @@ export default function Home() {
                     Phyllis Vance
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                    <b>"If they don't like it then they can leave - I mean, a lot of their work can be done in India."</b>
+                    <b>&quot;If they don&apos;t like it then they can leave - I mean, a lot of their work can be done in India.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -288,7 +288,7 @@ export default function Home() {
                     Oscar Martinez
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"If you would have seen the look he gave me, he wanted to rock more than just my vote."</b>
+                  <b>&quot;If you would have seen the look he gave me, he wanted to rock more than just my vote.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -310,7 +310,7 @@ export default function Home() {
                     Ryan Howard
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                    <b>"I'm such a perfectionist that I'd kinda rather not do it at all than do a crappy version."</b>
+                    <b>&quot;I&apos;m such a perfectionist that I&apos;d kinda rather not do it at all than do a crappy version.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -332,7 +332,7 @@ export default function Home() {
                     Kelly Kapoor
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"Ultimatums are key. Basically nobody does anything for me anymore unless I threaten to kill myself."</b>
+                  <b>&quot;Ultimatums are key. Basically nobody does anything for me anymore unless I threaten to kill myself.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -354,7 +354,7 @@ export default function Home() {
                     Andy Bernard
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                  <b>"I wish there was a way to know you're in the good old days before you've actually left them."</b>
+                  <b>&quot;I wish there was a way to know you&apos;re in the good old days before you&apos;ve actually left them.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -376,7 +376,7 @@ export default function Home() {
                     Toby Flenderson
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                    <b>"I have six roommates, which are better than friends because they have to give you one month's notice before they leave."</b>
+                    <b>&quot;I have six roommates, which are better than friends because they have to give you one month&apos;s notice before they leave.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -398,7 +398,7 @@ export default function Home() {
                     Darryl Philbin
                   </Typography>
                   <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
-                    <b>"I got my whole life to be a minority executive. Only have about a year left in these knees, though."</b>
+                    <b>&quot;I got my whole life to be a minority executive. Only have about a year left in these knees, though.&quot;</b>
                   </Typography>
                 </CardContent>
               </CardActionArea>

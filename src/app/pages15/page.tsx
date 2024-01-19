@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import '../layout'
-import useFetch from "react-fetch-hook"
+import useFetch from 'react-fetch-hook'
 import { Avatar } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import { RingLoader } from 'react-spinners';
