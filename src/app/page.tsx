@@ -47,7 +47,7 @@ export default function Home() {
                 sx={{ marginLeft: 'auto', marginRight: 'auto' }}
               />
 
-              <div style={{ marginLeft: "50px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black', minWidth: 1200 }}>"This is an environment of welcoming, and you should just get the hell out of here."<br />
+              <div style={{ marginLeft: "50px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black', minWidth: 1200 }}>&quot;This is an environment of welcoming, and you should just get the hell out of here.&quot;<br />
                 <p style={{ marginLeft: "300px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black', minWidth: 1200 }}>-Micheal Scott | Regional Manager of Dunder Mifflin-</p></div>
             </Toolbar>
           </AppBar>
