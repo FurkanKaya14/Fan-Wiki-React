@@ -16,12 +16,16 @@
   }
 }
 
+@font-face {
+  font-family: 'American Typewriter Medium';
+  src: local('American Typewriter Medium'), url('./fonts/AmericanTypewriterMedium.ttf') format('truetype');
+}
+
 body {
+  font-family: 'American Typewriter Medium', sans-serif;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
 }

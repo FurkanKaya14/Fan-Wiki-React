@@ -1,113 +1,411 @@
-import Image from 'next/image'
+'use client';
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+import foto from "./images/foto.png"
+import foto1 from "./images/office1.png"
+import foto2 from "./images/office2.jpg"
+import foto3 from "./images/office3.jpg"
+import foto4 from "./images/office4.jpg"
+import foto5 from "./images/office5.jpg"
+import foto6 from "./images/office6.png"
+import foto7 from "./images/office7.png"
+import foto8 from "./images/office8.jpg"
+import foto9 from "./images/office9.jpg"
+import foto10 from "./images/office10.jpg"
+import foto11 from "./images/office11.jpg"
+import foto12 from "./images/office12.jpg"
+import foto13 from "./images/office13.jpg"
+import foto14 from "./images/office14.jpg"
+import foto15 from "./images/office15.jpg"
+import foto16 from "./images/office16.jpg"
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Link from 'next/link';
+import './layout'
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      {/* Dizi logosu ve text'ten oluşan header */}
+      <body style={{ backgroundColor: "#17c0f2"}}>
+                  
+        <Box sx={{ flexGrow: 1 }} >
+          <AppBar position="static" style={{ backgroundColor: "#17c0f2" }}>
+            <Toolbar sx={{ maxWidth: 360, justifyContent: "space-between" }}>
+              <CardMedia
+                component="img"
+                height="1"
+                width="1"
+                image={foto.src}
+                alt=""
+                sx={{ marginLeft: 'auto', marginRight: 'auto' }}
+              />
+
+              <div style={{ marginLeft: "50px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black', minWidth: 1200 }}>"This is an environment of welcoming, and you should just get the hell out of here."<br />
+                <p style={{ marginLeft: "300px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black', minWidth: 1200 }}>-Micheal Scott | Regional Manager of Dunder Mifflin-</p></div>
+            </Toolbar>
+          </AppBar>
+        </Box>
+        {/* karakter foroğrafı, ve sözünden oluşan next.js ile karakterin sayfasına yönlendirme yapan kartlar */}
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around" }}>
+          <Link href="/pages">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto1.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Micheal Scott
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages1">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto2.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Jim Halpert
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"So this is my life. Until I win the lottery. Or Pam finally writes that series of young adult books."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages2">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto3.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Pam Beesley
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"When you’re a kid, you assume your parents are soulmates. My kids are going to be right about that."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages3">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto4.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Dwight Schrute
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"Whenever I'm about to do something, I think, 'Would an idiot do that?' and if they would, I do not do that thing."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages4">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto5.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Stanley Hudson
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"I would rather work for an upturned broom with a bucket for a head than work for somebody else in this office besides myself."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages5">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto6.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Angela Martin
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                    <b>"My sister and I used to be best friends, and we haven’t talked in over 16 years. Over some disagreement I don’t even remember."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages6">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto7.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Kevin Malone
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>“The only problem is whenever I try to make a taco, I get too excited and I crush it.”</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages7">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto8.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Meredith Palmer
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"Hey everybody, he's not in the men's room. Although the seat was warm, so we may have just missed him."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages8">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto9.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Creed Bratton
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"Nobody steals from Creed Bratton and gets away with it. The last person to do this disappeared. His name? Creed Bratton."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages9">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto10.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Phyllis Vance
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                    <b>"If they don't like it then they can leave - I mean, a lot of their work can be done in India."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages10">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto11.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Oscar Martinez
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"If you would have seen the look he gave me, he wanted to rock more than just my vote."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages11">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto12.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Ryan Howard
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                    <b>"I'm such a perfectionist that I'd kinda rather not do it at all than do a crappy version."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages12">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto13.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Kelly Kapoor
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"Ultimatums are key. Basically nobody does anything for me anymore unless I threaten to kill myself."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages13">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto14.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Andy Bernard
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                  <b>"I wish there was a way to know you're in the good old days before you've actually left them."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages14">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto15.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Toby Flenderson
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                    <b>"I have six roommates, which are better than friends because they have to give you one month's notice before they leave."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
+          <Link href="/pages15">
+            <Card sx={{ maxWidth: 360 }}>
+              <CardActionArea>
+
+                <CardMedia
+                  component="img"
+                  height="140"
+                  width="200"
+                  image={foto16.src}
+                  alt=""
+                />
+                <CardContent>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} gutterBottom variant="h5" component="div">
+                    Darryl Philbin
+                  </Typography>
+                  <Typography style={{ fontFamily: 'American Typewriter Medium' }} variant="body2" color="text.secondary">
+                    <b>"I got my whole life to be a minority executive. Only have about a year left in these knees, though."</b>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </body>
+    </>
   )
 }
