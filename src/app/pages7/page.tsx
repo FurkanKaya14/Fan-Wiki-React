@@ -6,7 +6,7 @@ import { Avatar } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import { RingLoader } from 'react-spinners';
 
-export default function () {
+export default function Home() {
   //API'den veri çekme işlemi
   const {data} = useFetch("https://theofficeapi.dev/api/character/54");
   //Veriler çekilene kadar bekleme

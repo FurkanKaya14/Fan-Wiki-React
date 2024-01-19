@@ -9,7 +9,7 @@ import { RingLoader } from 'react-spinners';
 
 
 
-export default function () {
+export default function Home() {
   //API'den veri çekme işlemi
   const { data } = useFetch("https://theofficeapi.dev/api/character/55");
   //Veriler çekilene kadar bekleme
