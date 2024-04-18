@@ -35,23 +35,23 @@ export default function Home() {
       {/* Dizi logosu ve text'ten oluşan header */}
       <body style={{ backgroundColor: "#17c0f2"}}>
                   
-        <Box sx={{ flexGrow: 1 }} >
-          <AppBar position="static" style={{ backgroundColor: "#17c0f2" }}>
-            <Toolbar sx={{ maxWidth: 360, justifyContent: "space-between" }}>
-              <CardMedia
-                component="img"
-                height="100px"
-                width="100px"
-                image={foto.src}
-                alt=""
-                sx={{ marginLeft: 'auto', marginRight: 'auto' }}
-              />
-
-              <div style={{ marginLeft: "50px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black', minWidth: 1200 }}>&quot;This is an environment of welcoming, and you should just get the hell out of here.&quot;<br />
-                <p style={{ marginLeft: "300px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black', minWidth: 1200 }}>-Micheal Scott | Regional Manager of Dunder Mifflin-</p></div>
-            </Toolbar>
-          </AppBar>
-        </Box>
+      <Box sx={{ flexGrow: 1 }}>
+  <AppBar position="static" style={{ backgroundColor: "#17c0f2" }}>
+    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
+      <div style={{marginLeft:  "30px", fontFamily: 'American Typewriter Medium', fontSize: 86, color: '#000', fontWeight: 'bold'}}>
+        the office
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
+        <div style={{marginTop: "15px", marginLeft:  "30px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black', minWidth: 120  }}>
+        &quot;This is an environment of welcoming, and you should just get the hell out of here.&quot;        
+        </div>
+        <div style={{ marginTop: "20px", fontFamily: 'American Typewriter Medium', fontSize: '24px', color: 'black' }}>
+          -Micheal Scott | Regional Manager of Dunder Mifflin-
+        </div>
+      </div>
+    </div>
+  </AppBar>
+</Box>
         {/* karakter foroğrafı, ve sözünden oluşan next.js ile karakterin sayfasına yönlendirme yapan kartlar */}
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around" }}>
           <Link href="/pages">
