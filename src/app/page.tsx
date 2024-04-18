@@ -40,8 +40,8 @@ export default function Home() {
             <Toolbar sx={{ maxWidth: 360, justifyContent: "space-between" }}>
               <CardMedia
                 component="img"
-                height="1"
-                width="1"
+                height="100px"
+                width="100px"
                 image={foto.src}
                 alt=""
                 sx={{ marginLeft: 'auto', marginRight: 'auto' }}
