@@ -1,2 +1,2 @@
 # Fan-Wiki-React
-The Office series fan wiki with data fetching
+The Office series fan wiki includes data fetching
